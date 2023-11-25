@@ -69,7 +69,7 @@ module.exports = function (sequelize, DataTypes) {
     roleID: DataTypes.STRING,
     phoneNumber: DataTypes.STRING,
     positionID: DataTypes.STRING,
-    image: DataTypes.TEXT
+    image: DataTypes.BLOB('long')
   }, {
     sequelize: sequelize,
     modelName: 'User'

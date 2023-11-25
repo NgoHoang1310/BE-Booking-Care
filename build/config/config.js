@@ -1,13 +1,16 @@
 "use strict";
 
+var _require = require('uuid'),
+  stringify = _require.stringify;
 require('dotenv').config();
 module.exports = {
   "development": {
-    "username": process.env.DB_USERNAME,
-    "password": null,
+    "username": "postgres",
+    "password": "Hoangutt72@",
+    "port": process.env.DB_PORT,
     "database": process.env.DB_DATABASE_NAME,
-    "host": process.env.DB_HOST,
-    "dialect": process.env.DB_DIALECT,
+    "host": "db.zaoqnodfkmzidxbtutzv.supabase.co",
+    "dialect": "postgres",
     "logging": false,
     "timezone": "+07:00",
     "query": {
