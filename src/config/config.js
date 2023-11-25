@@ -9,7 +9,7 @@ module.exports = {
     "database": process.env.DB_DATABASE_NAME,
     "host": process.env.DB_HOST,
 
-    "dialect": "postgres",
+    "dialect": process.env.DB_DIALECT,
     "logging": false,
     "timezone": "+07:00",
     "query": {
