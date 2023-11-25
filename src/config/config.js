@@ -25,10 +25,10 @@ module.exports = {
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "postgres",
+    "password": "Hoangutt72@",
+    "port": process.env.DB_PORT,
+    "database": process.env.DB_DATABASE_NAME,
+    "host": "db.zaoqnodfkmzidxbtutzv.supabase.co",
   }
 }
