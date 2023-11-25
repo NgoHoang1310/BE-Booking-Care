@@ -3,11 +3,11 @@ const { stringify } = require('uuid');
 require('dotenv').config();
 module.exports = {
   "development": {
-    "username": "postgres",
-    "password": "Hoangutt72@",
+    "username": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
     "port": process.env.DB_PORT,
     "database": process.env.DB_DATABASE_NAME,
-    "host": "db.zaoqnodfkmzidxbtutzv.supabase.co",
+    "host": process.env.DB_HOST,
 
     "dialect": "postgres",
     "logging": false,
@@ -25,10 +25,10 @@ module.exports = {
     "dialect": "mysql"
   },
   "production": {
-    "username": "postgres",
-    "password": "Hoangutt72@",
-    "port": process.env.DB_PORT,
-    "database": process.env.DB_DATABASE_NAME,
-    "host": "db.zaoqnodfkmzidxbtutzv.supabase.co",
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }
